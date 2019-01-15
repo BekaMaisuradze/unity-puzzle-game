@@ -541,7 +541,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 39069027}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1679854765}
+        m_MethodName: BackToPuzzleLevelSelectMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &39069027
@@ -653,7 +664,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 41908615}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1596810508}
+        m_MethodName: SelectPuzzleLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &41908615
@@ -1002,7 +1024,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 148180392}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1679854765}
+        m_MethodName: BackToPuzzleLevelSelectMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &148180392
@@ -2171,7 +2204,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 651032333}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1596810508}
+        m_MethodName: SelectPuzzleLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &651032333
@@ -3646,7 +3690,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1132636096}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1596810508}
+        m_MethodName: SelectPuzzleLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1132636096
@@ -3776,10 +3831,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a6336d02f115649bc1a1c954c11f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleGameManager: {fileID: 1679854769}
   selectPuzzleMenuPanel: {fileID: 1263898398}
   puzzleLevelSelectPanel: {fileID: 1452445397}
   selectPuzzleMenuAnim: {fileID: 1263898403}
   puzzleLevelSelectAnim: {fileID: 1452445402}
+  selectLevelController: {fileID: 1596810508}
 --- !u!1 &1236172490
 GameObject:
   m_ObjectHideFlags: 0
@@ -4880,7 +4937,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1560379716}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1679854765}
+        m_MethodName: BackToPuzzleLevelSelectMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1560379716
@@ -5011,10 +5079,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6a869af7fd634e8d12fc2da8da3c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleGameManager: {fileID: 1679854769}
   selectPuzzleMenuPanel: {fileID: 1263898398}
   puzzleLevelSelectPanel: {fileID: 1452445397}
   selectPuzzleMenuAnim: {fileID: 1263898403}
   puzzleLevelSelectAnim: {fileID: 1452445402}
+  loadPuzzleController: {fileID: 1679854765}
 --- !u!4 &1596810509
 Transform:
   m_ObjectHideFlags: 0
@@ -5244,6 +5314,132 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1654377587}
+--- !u!1 &1679854763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1679854764}
+  - component: {fileID: 1679854765}
+  - component: {fileID: 1679854766}
+  - component: {fileID: 1679854767}
+  - component: {fileID: 1679854768}
+  - component: {fileID: 1679854769}
+  m_Layer: 0
+  m_Name: PuzzleGameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1679854764
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679854763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1679854765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679854763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 479229752638d2745aeaa0e14ee6003e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layoutPuzzleButtons: {fileID: 1679854767}
+  puzzleLevelSelectPanel: {fileID: 1452445397}
+  puzzleLevelSelectAnim: {fileID: 1452445402}
+  puzzleGamePanel1: {fileID: 772195630}
+  puzzleGamePanel2: {fileID: 160516143}
+  puzzleGamePanel3: {fileID: 897877965}
+  puzzleGamePanel4: {fileID: 447523155}
+  puzzleGamePanel5: {fileID: 395539809}
+  puzzleGamePanelAnim1: {fileID: 772195635}
+  puzzleGamePanelAnim2: {fileID: 160516148}
+  puzzleGamePanelAnim3: {fileID: 897877970}
+  puzzleGamePanelAnim4: {fileID: 447523160}
+  puzzleGamePanelAnim5: {fileID: 395539814}
+--- !u!114 &1679854766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679854763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d66dbf243c3266647b16a180921f061a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layoutPuzzleButtons: {fileID: 1679854767}
+  puzzleButton: {fileID: 114688035864445840, guid: fa3a3877fa53a7946b5b80623776987f,
+    type: 2}
+--- !u!114 &1679854767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679854763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1920f28ff61f0f443899425ab68fd52d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setupPuzzleGame: {fileID: 1679854768}
+  puzzleLevel1: {fileID: 729812306}
+  puzzleLevel2: {fileID: 1976025418}
+  puzzleLevel3: {fileID: 1948592457}
+  puzzleLevel4: {fileID: 8585633}
+  puzzleLevel5: {fileID: 1236172491}
+  level1Buttons: []
+  level2Buttons: []
+  level3Buttons: []
+  level4Buttons: []
+  level5Buttons: []
+  level1Anims: []
+  level2Anims: []
+  level3Anims: []
+  level4Anims: []
+  level5Anims: []
+  puzzleButtonsBacksideImages:
+  - {fileID: 21300004, guid: 8b2885f72f10f6546aeae2dcd57989a9, type: 3}
+  - {fileID: 21300008, guid: 8b2885f72f10f6546aeae2dcd57989a9, type: 3}
+  - {fileID: 21300002, guid: 8b2885f72f10f6546aeae2dcd57989a9, type: 3}
+--- !u!114 &1679854768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679854763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f081e0b19f97847a7612587b34a989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleGameManager: {fileID: 1679854769}
+--- !u!114 &1679854769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679854763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5090c45735c24f84e8f313105877ba04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gamePuzzleSprites: []
 --- !u!1 &1684717293
 GameObject:
   m_ObjectHideFlags: 0
@@ -6030,7 +6226,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1975813850}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1596810508}
+        m_MethodName: SelectPuzzleLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1975813850
@@ -6674,7 +6881,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2097983387}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1679854765}
+        m_MethodName: BackToPuzzleLevelSelectMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2097983387
@@ -6785,7 +7003,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2101619588}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1679854765}
+        m_MethodName: BackToPuzzleLevelSelectMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2101619588
@@ -7092,7 +7321,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2144620859}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1596810508}
+        m_MethodName: SelectPuzzleLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2144620859
