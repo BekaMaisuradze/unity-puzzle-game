@@ -5,6 +5,9 @@ using UnityEngine;
 public class LoadPuzzleController : MonoBehaviour
 {
     [SerializeField]
+    private PuzzleGameManager puzzleGameManager;
+
+    [SerializeField]
     private LayoutPuzzleButtons layoutPuzzleButtons;
 
     [SerializeField]
@@ -61,7 +64,7 @@ public class LoadPuzzleController : MonoBehaviour
 
     public void BackToPuzzleLevelSelectMenu()
     {
-        //anims = puzzleGameManager.ResetGameplay();
+        anims = puzzleGameManager.ResetGameplay();
 
         //levelLocker.CheckWhichLevelsAreUnlocked(selectedPuzzle);
 
@@ -98,13 +101,13 @@ public class LoadPuzzleController : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
-        /*foreach (Animator anim in anims)
+        foreach (Animator anim in anims)
         {
             anim.Play("Idle");
         }
 
         yield return new WaitForSeconds(.5f);
-        */
+        
         puzzleGamePanel.SetActive(false);
     }
 

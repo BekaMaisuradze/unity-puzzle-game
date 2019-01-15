@@ -4260,7 +4260,7 @@ Animator:
   m_GameObject: {fileID: 1240316146}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dc31a63ddcd41c2418354dceee0f965e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5592,6 +5592,7 @@ GameObject:
   - component: {fileID: 1679854767}
   - component: {fileID: 1679854768}
   - component: {fileID: 1679854769}
+  - component: {fileID: 1679854770}
   m_Layer: 0
   m_Name: PuzzleGameController
   m_TagString: Untagged
@@ -5623,6 +5624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479229752638d2745aeaa0e14ee6003e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleGameManager: {fileID: 1679854769}
   layoutPuzzleButtons: {fileID: 1679854767}
   puzzleLevelSelectPanel: {fileID: 1452445397}
   puzzleLevelSelectAnim: {fileID: 1452445402}
@@ -5704,7 +5706,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5090c45735c24f84e8f313105877ba04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameFinished: {fileID: 1679854770}
   gamePuzzleSprites: []
+--- !u!114 &1679854770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679854763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4e38ea09d07354eb7aa22bac5719ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameFinishedPanel: {fileID: 1836380535}
+  gameFinishedAnim: {fileID: 1836380539}
+  star1Anim: {fileID: 1076744032}
+  star2Anim: {fileID: 1714747192}
+  star3Anim: {fileID: 59999985}
+  textAnim: {fileID: 1240316150}
 --- !u!1 &1684717293
 GameObject:
   m_ObjectHideFlags: 0
@@ -6114,7 +6134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1836380536
 RectTransform:
   m_ObjectHideFlags: 0
