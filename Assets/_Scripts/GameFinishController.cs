@@ -10,9 +10,12 @@ public class GameFinishController : MonoBehaviour {
     [SerializeField]
     private Animator gameFinishedAnim, star1Anim, star2Anim, star3Anim, textAnim;
 
+    private int stars;
+
     public void ShowGameFinishedPanel(int stars)
     {
-        StartCoroutine(ShowPanel(stars));
+        this.stars = stars;
+        StartCoroutine(ShowPanel());
     }
 
     public void HideGameFinishedPanel()
@@ -23,7 +26,7 @@ public class GameFinishController : MonoBehaviour {
         }
     }
 
-    IEnumerator ShowPanel(int stars)
+    IEnumerator ShowPanel()
     {
         gameFinishedPanel.SetActive(true);
 
@@ -84,8 +87,8 @@ public class GameFinishController : MonoBehaviour {
         gameFinishedAnim.Play("FadeOut");
 
         star1Anim.Play("StarFadeOut");
-        star2Anim.Play("StarFadeOut");
-        star3Anim.Play("StarFadeOut");
+        if (stars > 1) star2Anim.Play("StarFadeOut");
+        if (stars > 2) star3Anim.Play("StarFadeOut");
         textAnim.Play("TextFadeOut");
 
         yield return new WaitForSeconds(1.5f);

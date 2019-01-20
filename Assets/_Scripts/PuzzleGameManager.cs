@@ -48,19 +48,21 @@ public class PuzzleGameManager : MonoBehaviour
         }
         else if (!secondGuess)
         {
-            secondGuess = true;
+            var tmp = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
+            if (tmp != firstGuessIndex)     // in case of multi-click on same image
+            {
+                secondGuessIndex = tmp;
+                secondGuess = true;
 
-            secondGuessIndex = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
+                secondGuessPuzzle = gamePuzzleSprites[secondGuessIndex].name;
 
-            secondGuessPuzzle = gamePuzzleSprites[secondGuessIndex].name;
+                StartCoroutine(TurnPuzzleButtonUp(puzzleButtonsAnimators[secondGuessIndex],
+                                                  puzzleButtons[secondGuessIndex], gamePuzzleSprites[secondGuessIndex]));
 
-            StartCoroutine(TurnPuzzleButtonUp(puzzleButtonsAnimators[secondGuessIndex],
-                                              puzzleButtons[secondGuessIndex], gamePuzzleSprites[secondGuessIndex]));
+                StartCoroutine(CheckIfThePuzzlesMatch(puzzleBackgroundImage));
 
-            StartCoroutine(CheckIfThePuzzlesMatch(puzzleBackgroundImage));
-
-            countTryGuess++;
-
+                countTryGuess++;
+            }
         }
 
     }
@@ -195,8 +197,8 @@ public class PuzzleGameManager : MonoBehaviour
 
     public void SetUpButtonsAndAnimators(List<Button> buttons, List<Animator> animators)
     {
-        this.puzzleButtons = buttons;
-        this.puzzleButtonsAnimators = animators;
+        puzzleButtons = buttons;
+        puzzleButtonsAnimators = animators;
 
         gameGuess = puzzleButtons.Count / 2;
 
