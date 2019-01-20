@@ -16,12 +16,20 @@ public class SelectPuzzleController : MonoBehaviour
     [SerializeField]
     private SelectLevelController selectLevelController;
 
+    [SerializeField]
+    private LevelLocker levelLocker;
+
+    [SerializeField]
+    private StarsLocker starsLocker;
+
     private string selectedPuzzle;
 
     public void SelectedPuzzle()
     {
+        starsLocker.DeactivateStars();
         selectedPuzzle = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
         puzzleGameManager.SetSelectedPuzzle(selectedPuzzle);
+        levelLocker.CheckWhichLevelsAreUnlocked(selectedPuzzle);
         selectLevelController.SetSelectedPuzzle(selectedPuzzle);
         StartCoroutine(ShowPuzzleLevelSelectMenu());
     }

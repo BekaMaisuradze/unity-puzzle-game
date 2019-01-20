@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class PuzzleGameManager : MonoBehaviour
 {
     [SerializeField]
+    private GameSaver puzzleGameSaver;
+
+    [SerializeField]
     private GameFinishController gameFinished;
 
     private List<Button> puzzleButtons = new List<Button>();
@@ -137,15 +140,20 @@ public class PuzzleGameManager : MonoBehaviour
         {
             gameFinished.ShowGameFinishedPanel(3);
 
+            puzzleGameSaver.Save(level, selectedPuzzle, 3);
+
         }
         else if (countTryGuess < (howManyGuesses + 5))
         {
             gameFinished.ShowGameFinishedPanel(2);
 
+            puzzleGameSaver.Save(level, selectedPuzzle, 2);
+
         }
         else
         {
             gameFinished.ShowGameFinishedPanel(1);
+            puzzleGameSaver.Save(level, selectedPuzzle, 1);
         }
 
     }

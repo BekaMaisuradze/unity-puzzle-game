@@ -1774,6 +1774,53 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &449491308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 449491310}
+  - component: {fileID: 449491309}
+  m_Layer: 0
+  m_Name: PuzzleGameSaver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &449491309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 449491308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6725ca32282c6e243bd57bcb24b0a6f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candyPuzzleLevels: 
+  transportPuzzleLevels: 
+  fruitPuzzleLevels: 
+  candyPuzzleLevelStars: 
+  transportPuzzleLevelStars: 
+  fruitPuzzleLevelStars: 
+  musicVolume: 0
+--- !u!4 &449491310
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 449491308}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.4601948, y: -0.09047513, z: 90.23153}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &528691336
 GameObject:
   m_ObjectHideFlags: 0
@@ -2827,6 +2874,128 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &872256087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 872256089}
+  - component: {fileID: 872256088}
+  - component: {fileID: 872256090}
+  m_Layer: 0
+  m_Name: PuzzleMusicController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &872256088
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 872256087}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 403b43e779855a045a45fee006d83292, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &872256089
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 872256087}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.4601948, y: -0.09047513, z: 90.23153}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &872256090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 872256087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774ef845c1cfe224188c3aca4b354bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleGameSaver: {fileID: 449491309}
 --- !u!1 &879236291
 GameObject:
   m_ObjectHideFlags: 0
@@ -3991,8 +4160,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc6416555f52444cbf9d1d4b0340fae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicController: {fileID: 872256090}
   settingsPanel: {fileID: 729620179}
   settingsPanelAnim: {fileID: 729620184}
+  slider: {fileID: 1430714834}
 --- !u!114 &1223227372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4010,6 +4181,8 @@ MonoBehaviour:
   selectPuzzleMenuAnim: {fileID: 1263898403}
   puzzleLevelSelectAnim: {fileID: 1452445402}
   selectLevelController: {fileID: 1596810508}
+  levelLocker: {fileID: 1596810510}
+  starsLocker: {fileID: 1596810511}
 --- !u!1 &1236172490
 GameObject:
   m_ObjectHideFlags: 0
@@ -4748,7 +4921,18 @@ MonoBehaviour:
   m_Value: 0.458
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1223227371}
+        m_MethodName: AdjustVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1443744790
@@ -5326,6 +5510,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1596810509}
   - component: {fileID: 1596810508}
+  - component: {fileID: 1596810510}
+  - component: {fileID: 1596810511}
   m_Layer: 0
   m_Name: PuzzleLevelController
   m_TagString: Untagged
@@ -5345,6 +5531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleGameManager: {fileID: 1679854769}
+  levelLocker: {fileID: 1596810510}
   selectPuzzleMenuPanel: {fileID: 1263898398}
   puzzleLevelSelectPanel: {fileID: 1452445397}
   selectPuzzleMenuAnim: {fileID: 1263898403}
@@ -5363,6 +5550,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1596810510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1596810507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180538b6165ab994882e0d79bab813e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleGameSaver: {fileID: 449491309}
+  starsLocker: {fileID: 1596810511}
+  levelStarsHolders:
+  - {fileID: 1250498524}
+  - {fileID: 2085795304}
+  - {fileID: 528691336}
+  - {fileID: 400666317}
+  - {fileID: 1151484106}
+  levelsPadlocks:
+  - {fileID: 562352646}
+  - {fileID: 1320508196}
+  - {fileID: 1036152421}
+  - {fileID: 1065478223}
+  - {fileID: 1124308758}
+--- !u!114 &1596810511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1596810507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ee7b1a42d09ec548a8c4d9f117f3d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleGameSaver: {fileID: 449491309}
+  level1Stars:
+  - {fileID: 1840813575}
+  - {fileID: 1811460247}
+  - {fileID: 630656196}
+  level2Stars:
+  - {fileID: 360944534}
+  - {fileID: 1816749250}
+  - {fileID: 1791499875}
+  level3Stars:
+  - {fileID: 1107002183}
+  - {fileID: 147276018}
+  - {fileID: 315233184}
+  level4Stars:
+  - {fileID: 1684717293}
+  - {fileID: 971666809}
+  - {fileID: 1863896128}
+  level5Stars:
+  - {fileID: 1567409202}
+  - {fileID: 1990267904}
+  - {fileID: 1443744790}
+  candyPuzzleLevelStars: 
+  transportPuzzleLevelStars: 
+  fruitPuzzleLevelStars: 
 --- !u!1 &1622437104
 GameObject:
   m_ObjectHideFlags: 0
@@ -5625,6 +5872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleGameManager: {fileID: 1679854769}
+  levelLocker: {fileID: 1596810510}
   layoutPuzzleButtons: {fileID: 1679854767}
   puzzleLevelSelectPanel: {fileID: 1452445397}
   puzzleLevelSelectAnim: {fileID: 1452445402}
@@ -5706,6 +5954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5090c45735c24f84e8f313105877ba04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleGameSaver: {fileID: 449491309}
   gameFinished: {fileID: 1679854770}
   gamePuzzleSprites: []
 --- !u!114 &1679854770

@@ -8,6 +8,9 @@ public class SelectLevelController : MonoBehaviour
     private PuzzleGameManager puzzleGameManager;
 
     [SerializeField]
+    private LevelLocker levelLocker;
+
+    [SerializeField]
     private GameObject selectPuzzleMenuPanel, puzzleLevelSelectPanel;
 
     [SerializeField]
@@ -18,6 +21,8 @@ public class SelectLevelController : MonoBehaviour
 
     private string selectedPuzzle;
 
+    private bool[] puzzle;
+
     public void BackToPuzzleSelectMenu()
     {
         StartCoroutine(ShowPuzzleSelectMenu());
@@ -26,8 +31,13 @@ public class SelectLevelController : MonoBehaviour
     public void SelectPuzzleLevel()
     {
         int level = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
-        puzzleGameManager.SetLevel(level);
-        loadPuzzleController.LoadPuzzle(level, selectedPuzzle);
+        puzzle = levelLocker.GetPuzzleLevels(selectedPuzzle);
+
+        if (puzzle[level])
+        {
+            puzzleGameManager.SetLevel(level);
+            loadPuzzleController.LoadPuzzle(level, selectedPuzzle);
+        }
     }
 
     public void SetSelectedPuzzle(string puzzle)
